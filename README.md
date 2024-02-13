@@ -8,7 +8,8 @@ Logback classic, H2 database.
 
 ## Installing
 - Required version of IntelliJ is 2022.2.2. 
-- Maven compiler version is 19. For the database, an H2 console is required.
+- Maven compiler version 19.
+- For the database, an H2 console is required.
 
 Import all dependencies.
-Set up the H2 database with required schema.
+Set up the H2 database with required schema in sql.txt.
