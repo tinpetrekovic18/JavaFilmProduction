@@ -6,7 +6,7 @@ Download the project and open it with IntelliJ.
 ## Dependencies
 Logback classic, H2 database.
 
-## nstalling
+## Installing
 - Required version of IntelliJ is 2022.2.2. 
 - Maven compiler version is 19. For the database, an H2 console is required.
 
