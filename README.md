@@ -11,4 +11,4 @@ Logback classic, H2 database.
 -Maven compiler version is 19. For the database, an H2 console is required.
 
 Import all dependencies.
-Set up the H2 database with required schemas - published soon!
+Set up the H2 database with required schema.
