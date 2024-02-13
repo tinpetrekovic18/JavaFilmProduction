@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="25.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="upravljanje.filmskom.produkcijom.projekt.controllers.MenuController">
+   <children>
+      <MenuBar layoutY="1.0" maxWidth="700.0" minHeight="-Infinity" prefHeight="25.0" prefWidth="700.0">
+        <menus>
+          <Menu mnemonicParsing="false" onAction="#showAdrese" text="Adrese">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Adrese" />
+                  <MenuItem fx:id="DodavanjeAdresa" mnemonicParsing="false" onAction="#showDodajAdresu" text="Dodavanje Adrese" />
+                  <MenuItem mnemonicParsing="false" onAction="#showLokacije" text="Lokacije Snimanja" />
+                  <MenuItem fx:id="DodavanjeLokacija" mnemonicParsing="false" onAction="#showDodajLokaciju" text="Dodaj Lokacije Snimanja" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Osobe">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showGlumci" text="Glumci" />
+                  <MenuItem fx:id="DodajGlumce" mnemonicParsing="false" onAction="#showDodajGlumca" text="Dodaj Glumce" />
+                  <MenuItem mnemonicParsing="false" onAction="#showProducenti" text="Producenti" />
+                  <MenuItem fx:id="DodajProducente" mnemonicParsing="false" onAction="#showDodajProducenta" text="Dodaj Producente" />
+                  <MenuItem mnemonicParsing="false" onAction="#showClan" text="Radnici" />
+                  <MenuItem fx:id="DodajRadnike" mnemonicParsing="false" onAction="#showDodajClan" text="Dodaj Radnike" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Projekt">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showProjekt" text="Projekti" />
+                  <MenuItem fx:id="DodajProjekt" mnemonicParsing="false" onAction="#showDodajProjekt" text="Dodaj Projekte" />
+                  <MenuItem mnemonicParsing="false" onAction="#showScena" text="Scene" />
+                  <MenuItem fx:id="DodajScenu" mnemonicParsing="false" onAction="#showDodajScenu" text="Dodaj Scene" />
+                  <MenuItem mnemonicParsing="false" onAction="#showDistribucija" text="Distribucija" />
+                  <MenuItem fx:id="DodajDist" mnemonicParsing="false" onAction="#showDodajDistribuciju" text="Dodaj Distribuciju" />
+                  <MenuItem mnemonicParsing="false" onAction="#showFinancije" text="Financije" />
+                  <MenuItem fx:id="DodajFin" mnemonicParsing="false" onAction="#showDodajFinancije" text="Dodaj Financije" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Produkcijske kuće">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showKuca" text="Produkcijske kuće" />
+                  <MenuItem fx:id="DodajProdKuc" mnemonicParsing="false" onAction="#showDodajKuca" text="Dodaj Produkcijske kuće" />
+               </items>
+            </Menu>
+            <Menu fx:id="Promjene" mnemonicParsing="false" text="Promjene">
+               <items>
+                  <MenuItem fx:id="Promjenee" mnemonicParsing="false" onAction="#showPromjene" text="Promjene" />
+               </items>
+            </Menu>
+            <Menu fx:id="Korisnici" mnemonicParsing="false" text="Korisnici">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showKorisnik" text="Korisnici" />
+                  <MenuItem mnemonicParsing="false" onAction="#showDodajKorisnik" text="Dodaj Korisnike" />
+                  <MenuItem mnemonicParsing="false" onAction="#showRole" text="Role" />
+                  <MenuItem mnemonicParsing="false" onAction="#showDodajRolu" text="Dodaj Role" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="633.0" layoutY="1.0" mnemonicParsing="false" onAction="#odjava" prefHeight="20.0" prefWidth="65.0" text="Odjava" />
+   </children>
+</AnchorPane>

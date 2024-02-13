@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="upravljanje.filmskom.produkcijom.projekt.controllers.GlumciController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <fx:include source="menu.fxml" />
+        <TableView fx:id="TablicaGlumaca" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="5" GridPane.rowSpan="2">
+            <columns>
+                <TableColumn fx:id="idID" prefWidth="46.39999234676361" text="ID" />
+                <TableColumn fx:id="imeID" prefWidth="52.800018310546875" text="Ime" />
+                <TableColumn fx:id="prezimeID" prefWidth="76.00001525878906" text="Prezime" />
+                <TableColumn fx:id="oibID" prefWidth="66.39996337890625" text="OIB" />
+                <TableColumn fx:id="dobID" prefWidth="60.79998779296875" text="Dob" />
+                <TableColumn fx:id="umjetID" prefWidth="108.0" text="Umjetničko ime" />
+            <TableColumn fx:id="nomID" prefWidth="72.800048828125" text="Nominacije" />
+            <TableColumn fx:id="nagID" prefWidth="64.79998779296875" text="Nagrade" />
+            <TableColumn fx:id="projektID" prefWidth="64.79998779296875" text="Projekt" />
+            <TableColumn fx:id="pocetakID" prefWidth="64.79998779296875" text="Pocetak rada" />
+            </columns>
+            <GridPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+        </TableView>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Glumci" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Text>
+        <Label text="Projekt" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </Label>
+        <Label GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </Label>
+        <Label text="Umjetničko ime" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets right="10.0" />
+            </GridPane.margin>
+        </Label>
+        <TextField fx:id="inputUmjet" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button fx:id="filter" mnemonicParsing="false" onAction="#glumciSearch" prefWidth="90.0" text="Filtriraj" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="promjeni" mnemonicParsing="false" onAction="#editGlumac" prefHeight="31.0" prefWidth="90.0" text="Promjeni" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="obrisi" mnemonicParsing="false" onAction="#deleteGlumac" prefWidth="90.0" text="Obriši" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+      <ComboBox fx:id="comboProjekt" prefHeight="26.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    </children>
+</GridPane>
